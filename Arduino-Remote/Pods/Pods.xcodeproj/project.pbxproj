@@ -1,0 +1,1097 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		050BD51968841CC30AAC65D9E3E88DFE /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC281399063A5E62CECFBBD097D01D2 /* ConstraintMakerExtendable.swift */; };
+		0DF8454EB9EDAA467D7326457413861B /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66AA66BCD7583FB9A6324FB89D6C530 /* ConstraintLayoutSupportDSL.swift */; };
+		10B0AEDA89F841A73C2423B1FFEB3BB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		138BB2F39F4742BEEE0F184CF9686595 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F94C7C263067A0535BA4C068F5BA96 /* Debugging.swift */; };
+		13DFABA243DD2BA47A63CAF81D1B985F /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0C15939397708F7A906796D4C407 /* ConstraintMakerEditable.swift */; };
+		141EAC2AAA50E037259626DB66ADC5CD /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CBDC9E8348101FB596E1B0D64B3DD /* SnapKit-dummy.m */; };
+		16087BC6CF45651A70E62CDA8DB5889E /* Pods-Arduino-RemoteUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0960ADF40DA368599881A82E1AF2F2F /* Pods-Arduino-RemoteUITests-dummy.m */; };
+		166F281A540F0B5A4E924F7915710605 /* Pods-Arduino-RemoteTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8241521752D0802111A1453A965507E9 /* Pods-Arduino-RemoteTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		178559198A01E566F7BB7C42A133C45E /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DC359A7B04F408D0E8233AE8D87CCB /* ConstraintDSL.swift */; };
+		179784000709B8D2E50B98EDF76B1786 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425101B552E11290A01971FB977C9D94 /* ConstraintInsets.swift */; };
+		17A770A2DF9773938E95A46BF1086FCE /* Pods-Arduino-RemoteTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2276652912EBBC61A76F56BBCCA17550 /* Pods-Arduino-RemoteTests-dummy.m */; };
+		1D12230A619D19FEEDBB2A8DC88F619F /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D235C0E8456DA03B8724F17EA46D9F /* Constraint.swift */; };
+		2350CB6ACF02E42D636EB95DD356B48A /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDC6561D7E59F96048734F4A9C87399 /* LayoutConstraint.swift */; };
+		34F2F9CA353F76ECA9F34978B6BDBAD4 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D9011F616F5690D09CFC59CAC79EC /* ConstraintView.swift */; };
+		44EE6007FF5395B0844D1D931B396578 /* Pods-Arduino-Remote-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CC9D40163A0A2713781F1213444446 /* Pods-Arduino-Remote-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44F206E107C2FB58EB0AA82D8629A481 /* Pods-Arduino-Remote-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B1D044CDEE55D8124A1BE25562BD76 /* Pods-Arduino-Remote-dummy.m */; };
+		4E83EF45E4A5CA7617B75812613AA684 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		5784B44938E830C5B9BB0BC404E1B611 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959EFF4ED2C473620C5934AF38D555E /* ConstraintMaker.swift */; };
+		693C819E3EB5AC47564C5EE38ED1A3CA /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1F6250B9560C48D2982462F5197C7 /* ConstraintView+Extensions.swift */; };
+		701FFC9CC65E037A21866E622A06C503 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A754244D675324E814E05CF1E281645 /* ConstraintPriorityTarget.swift */; };
+		7C3C67DF52B8F80124430310840042B2 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E6A0E89915574C7D9DBC896D4A76A7 /* ConstraintLayoutSupport.swift */; };
+		88911E1EC15D00E98F129450DB290E3B /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F88505958E8DD77D99588F0471563 /* ConstraintPriority.swift */; };
+		90A8BB278EB5E78C2A44EFE99B255513 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF6A5B7704FACC7F9307D312A7EF61 /* ConstraintRelation.swift */; };
+		9172CBE411318B4B4DF918FBB8155284 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		99662F94FE090213F58C59B128D2CFDE /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734D85E58F3C5B8F418EE9B0A943DFB6 /* ConstraintLayoutGuide.swift */; };
+		99F8843087595555A7C62B262A398088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9BDE2B72C0909564683C0ABC1ED27505 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15388F9916461AFADC0B83C0F3896286 /* ConstraintAttributes.swift */; };
+		9DB12F27B8CAF1DAF788D8F78BA0FFEE /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECFB28DDFA00A26C7DEFA47C0B957D /* ConstraintRelatableTarget.swift */; };
+		9ED0D75BCAE87F0D2C70B5F826B30BE3 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A7AEA6044B2018807C2D766ED9025D /* ConstraintItem.swift */; };
+		A201BCF9A416227A7F99112145D5C5B1 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69940BF178423537E010EA0A592D164D /* Typealiases.swift */; };
+		A5510FB21A843D159C370317F5086257 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3430CAA9F5F4252B6DD4819000AF4AF3 /* ConstraintInsetTarget.swift */; };
+		AA520E48A19F6757105B1D1352FC7924 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ABC1FF8C8F648909E0AC7911172933 /* ConstraintMakerRelatable.swift */; };
+		B1077A9AB14500126893AD92FDEB5BC4 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B2D75BA44BD7EC2F724E0EDB30F325 /* ConstraintLayoutGuide+Extensions.swift */; };
+		B71E7B26260A29DE698C480754D4404A /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D210A13529B69371A362230828E459 /* ConstraintOffsetTarget.swift */; };
+		BC0705CB13A0CDF66C1D6C6A415C1290 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DECB55AE295F271C9D4E2198054FA /* ConstraintLayoutGuideDSL.swift */; };
+		BE35D7A1F04C890EC7FF4AAC67748273 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC6236D47CB2BA34B4F1F344E985DF2 /* ConstraintMultiplierTarget.swift */; };
+		BE87E544A3641057C87325F1641E10DC /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215EB1EB7D34BAE4D61BE35FD37C7B8C /* ConstraintConstantTarget.swift */; };
+		CABFE33F024533241461A51EDBA991D9 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C0BEE93AF56739E9FF303A7ECA5D04 /* UILayoutSupport+Extensions.swift */; };
+		D8801D7638D3137CD4F53955D76731DD /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6693C457C9655D1E49B7B8027767CF /* LayoutConstraintItem.swift */; };
+		D8D5DBB090D1CEBD69AD5A0A3C74CF6D /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718501E66EB9C33CE1F87D62CC2CC57D /* ConstraintViewDSL.swift */; };
+		E9AD02906FE558FF7CC7D5DA967BEB9C /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D310AAB8E50557845B5D7CF84C02F45 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF10208258EB5BA1B8172406DA3107B4 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5926F04B724FCFC18EB3D230A13C07 /* ConstraintMakerFinalizable.swift */; };
+		F2F2CC795C2B9BF76FC3F720D70C34A3 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53136A44C3AF8EA930C8F0C67B926F0 /* ConstraintConfig.swift */; };
+		F335A12298EC1FFC3C1EEC15854B70FB /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671A026067AF279C0A07DAC5E3D5F56 /* ConstraintDescription.swift */; };
+		F7CE380F3E013CA783FFFA7D5FFD494B /* Pods-Arduino-RemoteUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C3098C36B95BE9C4A467400670448C7 /* Pods-Arduino-RemoteUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC54F6AD1220442FB06C4D9A39CF1CAB /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC8E050E3BE6E46D7C010378F29A56 /* ConstraintMakerPriortizable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7AD2605681088974E0CBCB1F21C23E28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F53D431F0F8DC91B2C23934F4394B28D;
+			remoteInfo = "Pods-Arduino-Remote";
+		};
+		9AD3E33CC4DEEC59319963EC888B6BAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F53D431F0F8DC91B2C23934F4394B28D;
+			remoteInfo = "Pods-Arduino-Remote";
+		};
+		DE3F0B8D12199E8168DF8AD94F5BCB98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8253FF1F6C747668C3B5FBCE770C995;
+			remoteInfo = SnapKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02CC9D40163A0A2713781F1213444446 /* Pods-Arduino-Remote-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Arduino-Remote-umbrella.h"; sourceTree = "<group>"; };
+		02E6A0E89915574C7D9DBC896D4A76A7 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		091CAF026BE9C6FFE84DEA21081DD7CC /* Pods-Arduino-RemoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Arduino-RemoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		0A754244D675324E814E05CF1E281645 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		14ABC1FF8C8F648909E0AC7911172933 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		15388F9916461AFADC0B83C0F3896286 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		15DBBCA4E9338020AF9EA28B46E4E37B /* Pods-Arduino-RemoteUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Arduino-RemoteUITests.modulemap"; sourceTree = "<group>"; };
+		16DC359A7B04F408D0E8233AE8D87CCB /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		1903AF2FDF9F9DE9F95CB0EA334BE4E1 /* Pods-Arduino-RemoteUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Arduino-RemoteUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1A0D1CD10B3EBE5D1172D46A5158D007 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		1D310AAB8E50557845B5D7CF84C02F45 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		215EB1EB7D34BAE4D61BE35FD37C7B8C /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		218DECB55AE295F271C9D4E2198054FA /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		2276652912EBBC61A76F56BBCCA17550 /* Pods-Arduino-RemoteTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Arduino-RemoteTests-dummy.m"; sourceTree = "<group>"; };
+		22B1D044CDEE55D8124A1BE25562BD76 /* Pods-Arduino-Remote-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Arduino-Remote-dummy.m"; sourceTree = "<group>"; };
+		26FF6A5B7704FACC7F9307D312A7EF61 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		309E67CC61C320E94D4E82EC92CD80CA /* Pods-Arduino-RemoteTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Arduino-RemoteTests.modulemap"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		33756743B48D9A50510AB42C8EF5621D /* Pods_Arduino_RemoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Arduino_RemoteTests.framework; path = "Pods-Arduino-RemoteTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3430CAA9F5F4252B6DD4819000AF4AF3 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		38C0BEE93AF56739E9FF303A7ECA5D04 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		3EEF84EA071AE73119F9F78CCB7A8FB5 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		425101B552E11290A01971FB977C9D94 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		42EC8E050E3BE6E46D7C010378F29A56 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		5050B96932F0618720D3C02B2588EBD7 /* Pods-Arduino-Remote-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Arduino-Remote-acknowledgements.plist"; sourceTree = "<group>"; };
+		54FD0AE319C28256E25F7F5A094B8C58 /* Pods-Arduino-RemoteTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Arduino-RemoteTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5D03F3C139319EA4D8F5A6B079637C29 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		5DFE784D50274AB97101AD4ACD6B2A70 /* Pods-Arduino-Remote-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Arduino-Remote-frameworks.sh"; sourceTree = "<group>"; };
+		5FC6236D47CB2BA34B4F1F344E985DF2 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		62DBCD3FE337E04D705B6C45FFE227B6 /* Pods-Arduino-RemoteTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Arduino-RemoteTests-Info.plist"; sourceTree = "<group>"; };
+		65ECFB28DDFA00A26C7DEFA47C0B957D /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		68C424290B7C32FF967BB3B43746416B /* Pods-Arduino-RemoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Arduino-RemoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		696D0C15939397708F7A906796D4C407 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		69940BF178423537E010EA0A592D164D /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		6AA0EBB94BE595294E032BC2CE38DAC1 /* Pods-Arduino-RemoteUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Arduino-RemoteUITests-Info.plist"; sourceTree = "<group>"; };
+		6C3098C36B95BE9C4A467400670448C7 /* Pods-Arduino-RemoteUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Arduino-RemoteUITests-umbrella.h"; sourceTree = "<group>"; };
+		6FDC6561D7E59F96048734F4A9C87399 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		718501E66EB9C33CE1F87D62CC2CC57D /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		734D85E58F3C5B8F418EE9B0A943DFB6 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		74D1F6250B9560C48D2982462F5197C7 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		74D235C0E8456DA03B8724F17EA46D9F /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		785CD944451A0232FBC83D03934F7518 /* Pods_Arduino_RemoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Arduino_RemoteUITests.framework; path = "Pods-Arduino-RemoteUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78AE4FCC454E1C149B60691D8799AD25 /* Pods_Arduino_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Arduino_Remote.framework; path = "Pods-Arduino-Remote.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81192D65FC1BC688454871D264E4DAB3 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8241521752D0802111A1453A965507E9 /* Pods-Arduino-RemoteTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Arduino-RemoteTests-umbrella.h"; sourceTree = "<group>"; };
+		8959EFF4ED2C473620C5934AF38D555E /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		8C5926F04B724FCFC18EB3D230A13C07 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		8D6693C457C9655D1E49B7B8027767CF /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		9014D8FE68A52A987FD72A5958D4F5E3 /* Pods-Arduino-Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Arduino-Remote.release.xcconfig"; sourceTree = "<group>"; };
+		90D210A13529B69371A362230828E459 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		987D9011F616F5690D09CFC59CAC79EC /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		9AC281399063A5E62CECFBBD097D01D2 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		9B59FC0622ECEC4D3830B633E1410333 /* Pods-Arduino-Remote.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Arduino-Remote.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0338D3CE2E2105F07A864767F012A91 /* Pods-Arduino-RemoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Arduino-RemoteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A16CBDC9E8348101FB596E1B0D64B3DD /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		A66AA66BCD7583FB9A6324FB89D6C530 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		A671A026067AF279C0A07DAC5E3D5F56 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		AC36BCAA87BA541DE95DD7965AA7A1A5 /* Pods-Arduino-RemoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Arduino-RemoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ACEA5034682B13F24A77BCDE995505F6 /* Pods-Arduino-RemoteTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Arduino-RemoteTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B0F8A1296D181CF5A2E30538B3501A59 /* Pods-Arduino-Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Arduino-Remote.debug.xcconfig"; sourceTree = "<group>"; };
+		BC9F88505958E8DD77D99588F0471563 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		BD58D3AFC14D7AC1077D81DD97CE608E /* Pods-Arduino-RemoteUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Arduino-RemoteUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C5BAB264DB807F61959C7140267A65A5 /* Pods-Arduino-Remote-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Arduino-Remote-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CA4FF4E71663EC42540FE25987543F34 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		D0960ADF40DA368599881A82E1AF2F2F /* Pods-Arduino-RemoteUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Arduino-RemoteUITests-dummy.m"; sourceTree = "<group>"; };
+		D0F94C7C263067A0535BA4C068F5BA96 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		DBFB802C9EBAD1CD0D56849B544EC708 /* Pods-Arduino-Remote-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Arduino-Remote-Info.plist"; sourceTree = "<group>"; };
+		E8B2D75BA44BD7EC2F724E0EDB30F325 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		F1A7AEA6044B2018807C2D766ED9025D /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		F53136A44C3AF8EA930C8F0C67B926F0 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72791C77695A0FC36D1BC4D89C09B616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E83EF45E4A5CA7617B75812613AA684 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8001F1170480D4FA4289C75713744047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10B0AEDA89F841A73C2423B1FFEB3BB2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99143D87EC3E617864D255605FDCC6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9172CBE411318B4B4DF918FBB8155284 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D9249CF5AC0BB61DACFB9C2E3D7D19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F8843087595555A7C62B262A398088 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07CC97B6A938D85DA6560E78C112525F /* Pods-Arduino-Remote */ = {
+			isa = PBXGroup;
+			children = (
+				9B59FC0622ECEC4D3830B633E1410333 /* Pods-Arduino-Remote.modulemap */,
+				C5BAB264DB807F61959C7140267A65A5 /* Pods-Arduino-Remote-acknowledgements.markdown */,
+				5050B96932F0618720D3C02B2588EBD7 /* Pods-Arduino-Remote-acknowledgements.plist */,
+				22B1D044CDEE55D8124A1BE25562BD76 /* Pods-Arduino-Remote-dummy.m */,
+				5DFE784D50274AB97101AD4ACD6B2A70 /* Pods-Arduino-Remote-frameworks.sh */,
+				DBFB802C9EBAD1CD0D56849B544EC708 /* Pods-Arduino-Remote-Info.plist */,
+				02CC9D40163A0A2713781F1213444446 /* Pods-Arduino-Remote-umbrella.h */,
+				B0F8A1296D181CF5A2E30538B3501A59 /* Pods-Arduino-Remote.debug.xcconfig */,
+				9014D8FE68A52A987FD72A5958D4F5E3 /* Pods-Arduino-Remote.release.xcconfig */,
+			);
+			name = "Pods-Arduino-Remote";
+			path = "Target Support Files/Pods-Arduino-Remote";
+			sourceTree = "<group>";
+		};
+		0E78590002DA5C8214BB13F7F0008310 /* Pods-Arduino-RemoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15DBBCA4E9338020AF9EA28B46E4E37B /* Pods-Arduino-RemoteUITests.modulemap */,
+				BD58D3AFC14D7AC1077D81DD97CE608E /* Pods-Arduino-RemoteUITests-acknowledgements.markdown */,
+				1903AF2FDF9F9DE9F95CB0EA334BE4E1 /* Pods-Arduino-RemoteUITests-acknowledgements.plist */,
+				D0960ADF40DA368599881A82E1AF2F2F /* Pods-Arduino-RemoteUITests-dummy.m */,
+				6AA0EBB94BE595294E032BC2CE38DAC1 /* Pods-Arduino-RemoteUITests-Info.plist */,
+				6C3098C36B95BE9C4A467400670448C7 /* Pods-Arduino-RemoteUITests-umbrella.h */,
+				68C424290B7C32FF967BB3B43746416B /* Pods-Arduino-RemoteUITests.debug.xcconfig */,
+				A0338D3CE2E2105F07A864767F012A91 /* Pods-Arduino-RemoteUITests.release.xcconfig */,
+			);
+			name = "Pods-Arduino-RemoteUITests";
+			path = "Target Support Files/Pods-Arduino-RemoteUITests";
+			sourceTree = "<group>";
+		};
+		3FB2C50B0B238BAAE5BBEB19112D829B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				07CC97B6A938D85DA6560E78C112525F /* Pods-Arduino-Remote */,
+				B002FCB858576FBAC4F6DF135AFC75B8 /* Pods-Arduino-RemoteTests */,
+				0E78590002DA5C8214BB13F7F0008310 /* Pods-Arduino-RemoteUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		427B270BD76A5EF45313FBF29233B96D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F64F26DEDF5F31DDC5DB06B012746920 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B002FCB858576FBAC4F6DF135AFC75B8 /* Pods-Arduino-RemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				309E67CC61C320E94D4E82EC92CD80CA /* Pods-Arduino-RemoteTests.modulemap */,
+				ACEA5034682B13F24A77BCDE995505F6 /* Pods-Arduino-RemoteTests-acknowledgements.markdown */,
+				54FD0AE319C28256E25F7F5A094B8C58 /* Pods-Arduino-RemoteTests-acknowledgements.plist */,
+				2276652912EBBC61A76F56BBCCA17550 /* Pods-Arduino-RemoteTests-dummy.m */,
+				62DBCD3FE337E04D705B6C45FFE227B6 /* Pods-Arduino-RemoteTests-Info.plist */,
+				8241521752D0802111A1453A965507E9 /* Pods-Arduino-RemoteTests-umbrella.h */,
+				AC36BCAA87BA541DE95DD7965AA7A1A5 /* Pods-Arduino-RemoteTests.debug.xcconfig */,
+				091CAF026BE9C6FFE84DEA21081DD7CC /* Pods-Arduino-RemoteTests.release.xcconfig */,
+			);
+			name = "Pods-Arduino-RemoteTests";
+			path = "Target Support Files/Pods-Arduino-RemoteTests";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				427B270BD76A5EF45313FBF29233B96D /* Pods */,
+				F81FE2546602677CFD8561FB67704BB4 /* Products */,
+				3FB2C50B0B238BAAE5BBEB19112D829B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E30FFDD7CFF30076B0BF0F0C15956A86 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA4FF4E71663EC42540FE25987543F34 /* SnapKit.modulemap */,
+				5D03F3C139319EA4D8F5A6B079637C29 /* SnapKit.xcconfig */,
+				A16CBDC9E8348101FB596E1B0D64B3DD /* SnapKit-dummy.m */,
+				3EEF84EA071AE73119F9F78CCB7A8FB5 /* SnapKit-Info.plist */,
+				1A0D1CD10B3EBE5D1172D46A5158D007 /* SnapKit-prefix.pch */,
+				1D310AAB8E50557845B5D7CF84C02F45 /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		F64F26DEDF5F31DDC5DB06B012746920 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				74D235C0E8456DA03B8724F17EA46D9F /* Constraint.swift */,
+				15388F9916461AFADC0B83C0F3896286 /* ConstraintAttributes.swift */,
+				F53136A44C3AF8EA930C8F0C67B926F0 /* ConstraintConfig.swift */,
+				215EB1EB7D34BAE4D61BE35FD37C7B8C /* ConstraintConstantTarget.swift */,
+				A671A026067AF279C0A07DAC5E3D5F56 /* ConstraintDescription.swift */,
+				16DC359A7B04F408D0E8233AE8D87CCB /* ConstraintDSL.swift */,
+				425101B552E11290A01971FB977C9D94 /* ConstraintInsets.swift */,
+				3430CAA9F5F4252B6DD4819000AF4AF3 /* ConstraintInsetTarget.swift */,
+				F1A7AEA6044B2018807C2D766ED9025D /* ConstraintItem.swift */,
+				734D85E58F3C5B8F418EE9B0A943DFB6 /* ConstraintLayoutGuide.swift */,
+				E8B2D75BA44BD7EC2F724E0EDB30F325 /* ConstraintLayoutGuide+Extensions.swift */,
+				218DECB55AE295F271C9D4E2198054FA /* ConstraintLayoutGuideDSL.swift */,
+				02E6A0E89915574C7D9DBC896D4A76A7 /* ConstraintLayoutSupport.swift */,
+				A66AA66BCD7583FB9A6324FB89D6C530 /* ConstraintLayoutSupportDSL.swift */,
+				8959EFF4ED2C473620C5934AF38D555E /* ConstraintMaker.swift */,
+				696D0C15939397708F7A906796D4C407 /* ConstraintMakerEditable.swift */,
+				9AC281399063A5E62CECFBBD097D01D2 /* ConstraintMakerExtendable.swift */,
+				8C5926F04B724FCFC18EB3D230A13C07 /* ConstraintMakerFinalizable.swift */,
+				42EC8E050E3BE6E46D7C010378F29A56 /* ConstraintMakerPriortizable.swift */,
+				14ABC1FF8C8F648909E0AC7911172933 /* ConstraintMakerRelatable.swift */,
+				5FC6236D47CB2BA34B4F1F344E985DF2 /* ConstraintMultiplierTarget.swift */,
+				90D210A13529B69371A362230828E459 /* ConstraintOffsetTarget.swift */,
+				BC9F88505958E8DD77D99588F0471563 /* ConstraintPriority.swift */,
+				0A754244D675324E814E05CF1E281645 /* ConstraintPriorityTarget.swift */,
+				65ECFB28DDFA00A26C7DEFA47C0B957D /* ConstraintRelatableTarget.swift */,
+				26FF6A5B7704FACC7F9307D312A7EF61 /* ConstraintRelation.swift */,
+				987D9011F616F5690D09CFC59CAC79EC /* ConstraintView.swift */,
+				74D1F6250B9560C48D2982462F5197C7 /* ConstraintView+Extensions.swift */,
+				718501E66EB9C33CE1F87D62CC2CC57D /* ConstraintViewDSL.swift */,
+				D0F94C7C263067A0535BA4C068F5BA96 /* Debugging.swift */,
+				6FDC6561D7E59F96048734F4A9C87399 /* LayoutConstraint.swift */,
+				8D6693C457C9655D1E49B7B8027767CF /* LayoutConstraintItem.swift */,
+				69940BF178423537E010EA0A592D164D /* Typealiases.swift */,
+				38C0BEE93AF56739E9FF303A7ECA5D04 /* UILayoutSupport+Extensions.swift */,
+				E30FFDD7CFF30076B0BF0F0C15956A86 /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		F81FE2546602677CFD8561FB67704BB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78AE4FCC454E1C149B60691D8799AD25 /* Pods_Arduino_Remote.framework */,
+				33756743B48D9A50510AB42C8EF5621D /* Pods_Arduino_RemoteTests.framework */,
+				785CD944451A0232FBC83D03934F7518 /* Pods_Arduino_RemoteUITests.framework */,
+				81192D65FC1BC688454871D264E4DAB3 /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		028D29678F41ED7D2757BE0C527A5992 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9AD02906FE558FF7CC7D5DA967BEB9C /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2876D033DE65A08993E9091307FE1398 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166F281A540F0B5A4E924F7915710605 /* Pods-Arduino-RemoteTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92D299BD693459E1505940F67EEB6A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44EE6007FF5395B0844D1D931B396578 /* Pods-Arduino-Remote-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C31B1131D1B3803D757D3C16EB746337 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7CE380F3E013CA783FFFA7D5FFD494B /* Pods-Arduino-RemoteUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		02AD0128F1D6989CC6F6C8AC028D0C5E /* Pods-Arduino-RemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C723B470CAAE4D9B98682528726D057C /* Build configuration list for PBXNativeTarget "Pods-Arduino-RemoteTests" */;
+			buildPhases = (
+				2876D033DE65A08993E9091307FE1398 /* Headers */,
+				C3A328532DDDA98E746FFA6949881B38 /* Sources */,
+				E4D9249CF5AC0BB61DACFB9C2E3D7D19 /* Frameworks */,
+				66BE4CE7D2CBE0F84C6D9F850C1EC28C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07A5B1AFB05E19957DE6AE3132E0C9F5 /* PBXTargetDependency */,
+			);
+			name = "Pods-Arduino-RemoteTests";
+			productName = "Pods-Arduino-RemoteTests";
+			productReference = 33756743B48D9A50510AB42C8EF5621D /* Pods_Arduino_RemoteTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6F8A282F1FBDBDACB7FD3FA875866DA3 /* Pods-Arduino-RemoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84077C21D57C115B539DBE67B78D6216 /* Build configuration list for PBXNativeTarget "Pods-Arduino-RemoteUITests" */;
+			buildPhases = (
+				C31B1131D1B3803D757D3C16EB746337 /* Headers */,
+				BE7D21D72C2E2200C475785D88D0785E /* Sources */,
+				99143D87EC3E617864D255605FDCC6CC /* Frameworks */,
+				590102E103C71EC594A5EC917E8C44DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAE3903D27FE96ED36EA44CEAAA514EA /* PBXTargetDependency */,
+			);
+			name = "Pods-Arduino-RemoteUITests";
+			productName = "Pods-Arduino-RemoteUITests";
+			productReference = 785CD944451A0232FBC83D03934F7518 /* Pods_Arduino_RemoteUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D8253FF1F6C747668C3B5FBCE770C995 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECFF1ABCF66E3ED0F7C8B3971A1AF667 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				028D29678F41ED7D2757BE0C527A5992 /* Headers */,
+				A5F97EC9E3E45AEA71D5B6EB33312A52 /* Sources */,
+				72791C77695A0FC36D1BC4D89C09B616 /* Frameworks */,
+				AEB582FF42FCEDA2C89B475BE3FE25A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 81192D65FC1BC688454871D264E4DAB3 /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F53D431F0F8DC91B2C23934F4394B28D /* Pods-Arduino-Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8851196C07143880ED1DDE46F9BCC1 /* Build configuration list for PBXNativeTarget "Pods-Arduino-Remote" */;
+			buildPhases = (
+				A92D299BD693459E1505940F67EEB6A8 /* Headers */,
+				D4CED7CB7FA63CBE375824DA6FFBE6B1 /* Sources */,
+				8001F1170480D4FA4289C75713744047 /* Frameworks */,
+				A7B7912EE5BDA253DBC273193406B1F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA279186A5950A5DF0E7EF5F0D09F1C6 /* PBXTargetDependency */,
+			);
+			name = "Pods-Arduino-Remote";
+			productName = "Pods-Arduino-Remote";
+			productReference = 78AE4FCC454E1C149B60691D8799AD25 /* Pods_Arduino_Remote.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F81FE2546602677CFD8561FB67704BB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F53D431F0F8DC91B2C23934F4394B28D /* Pods-Arduino-Remote */,
+				02AD0128F1D6989CC6F6C8AC028D0C5E /* Pods-Arduino-RemoteTests */,
+				6F8A282F1FBDBDACB7FD3FA875866DA3 /* Pods-Arduino-RemoteUITests */,
+				D8253FF1F6C747668C3B5FBCE770C995 /* SnapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		590102E103C71EC594A5EC917E8C44DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66BE4CE7D2CBE0F84C6D9F850C1EC28C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B7912EE5BDA253DBC273193406B1F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEB582FF42FCEDA2C89B475BE3FE25A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5F97EC9E3E45AEA71D5B6EB33312A52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D12230A619D19FEEDBB2A8DC88F619F /* Constraint.swift in Sources */,
+				9BDE2B72C0909564683C0ABC1ED27505 /* ConstraintAttributes.swift in Sources */,
+				F2F2CC795C2B9BF76FC3F720D70C34A3 /* ConstraintConfig.swift in Sources */,
+				BE87E544A3641057C87325F1641E10DC /* ConstraintConstantTarget.swift in Sources */,
+				F335A12298EC1FFC3C1EEC15854B70FB /* ConstraintDescription.swift in Sources */,
+				178559198A01E566F7BB7C42A133C45E /* ConstraintDSL.swift in Sources */,
+				179784000709B8D2E50B98EDF76B1786 /* ConstraintInsets.swift in Sources */,
+				A5510FB21A843D159C370317F5086257 /* ConstraintInsetTarget.swift in Sources */,
+				9ED0D75BCAE87F0D2C70B5F826B30BE3 /* ConstraintItem.swift in Sources */,
+				B1077A9AB14500126893AD92FDEB5BC4 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				99662F94FE090213F58C59B128D2CFDE /* ConstraintLayoutGuide.swift in Sources */,
+				BC0705CB13A0CDF66C1D6C6A415C1290 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				7C3C67DF52B8F80124430310840042B2 /* ConstraintLayoutSupport.swift in Sources */,
+				0DF8454EB9EDAA467D7326457413861B /* ConstraintLayoutSupportDSL.swift in Sources */,
+				5784B44938E830C5B9BB0BC404E1B611 /* ConstraintMaker.swift in Sources */,
+				13DFABA243DD2BA47A63CAF81D1B985F /* ConstraintMakerEditable.swift in Sources */,
+				050BD51968841CC30AAC65D9E3E88DFE /* ConstraintMakerExtendable.swift in Sources */,
+				EF10208258EB5BA1B8172406DA3107B4 /* ConstraintMakerFinalizable.swift in Sources */,
+				FC54F6AD1220442FB06C4D9A39CF1CAB /* ConstraintMakerPriortizable.swift in Sources */,
+				AA520E48A19F6757105B1D1352FC7924 /* ConstraintMakerRelatable.swift in Sources */,
+				BE35D7A1F04C890EC7FF4AAC67748273 /* ConstraintMultiplierTarget.swift in Sources */,
+				B71E7B26260A29DE698C480754D4404A /* ConstraintOffsetTarget.swift in Sources */,
+				88911E1EC15D00E98F129450DB290E3B /* ConstraintPriority.swift in Sources */,
+				701FFC9CC65E037A21866E622A06C503 /* ConstraintPriorityTarget.swift in Sources */,
+				9DB12F27B8CAF1DAF788D8F78BA0FFEE /* ConstraintRelatableTarget.swift in Sources */,
+				90A8BB278EB5E78C2A44EFE99B255513 /* ConstraintRelation.swift in Sources */,
+				693C819E3EB5AC47564C5EE38ED1A3CA /* ConstraintView+Extensions.swift in Sources */,
+				34F2F9CA353F76ECA9F34978B6BDBAD4 /* ConstraintView.swift in Sources */,
+				D8D5DBB090D1CEBD69AD5A0A3C74CF6D /* ConstraintViewDSL.swift in Sources */,
+				138BB2F39F4742BEEE0F184CF9686595 /* Debugging.swift in Sources */,
+				2350CB6ACF02E42D636EB95DD356B48A /* LayoutConstraint.swift in Sources */,
+				D8801D7638D3137CD4F53955D76731DD /* LayoutConstraintItem.swift in Sources */,
+				141EAC2AAA50E037259626DB66ADC5CD /* SnapKit-dummy.m in Sources */,
+				A201BCF9A416227A7F99112145D5C5B1 /* Typealiases.swift in Sources */,
+				CABFE33F024533241461A51EDBA991D9 /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE7D21D72C2E2200C475785D88D0785E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16087BC6CF45651A70E62CDA8DB5889E /* Pods-Arduino-RemoteUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3A328532DDDA98E746FFA6949881B38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A770A2DF9773938E95A46BF1086FCE /* Pods-Arduino-RemoteTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CED7CB7FA63CBE375824DA6FFBE6B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F206E107C2FB58EB0AA82D8629A481 /* Pods-Arduino-Remote-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07A5B1AFB05E19957DE6AE3132E0C9F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Arduino-Remote";
+			target = F53D431F0F8DC91B2C23934F4394B28D /* Pods-Arduino-Remote */;
+			targetProxy = 7AD2605681088974E0CBCB1F21C23E28 /* PBXContainerItemProxy */;
+		};
+		BA279186A5950A5DF0E7EF5F0D09F1C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = D8253FF1F6C747668C3B5FBCE770C995 /* SnapKit */;
+			targetProxy = DE3F0B8D12199E8168DF8AD94F5BCB98 /* PBXContainerItemProxy */;
+		};
+		EAE3903D27FE96ED36EA44CEAAA514EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Arduino-Remote";
+			target = F53D431F0F8DC91B2C23934F4394B28D /* Pods-Arduino-Remote */;
+			targetProxy = 9AD3E33CC4DEEC59319963EC888B6BAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		23640E2F4028261B51D4DA98F7600937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D03F3C139319EA4D8F5A6B079637C29 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		3E6900B4551CE8A705B8DB4F1E915581 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC36BCAA87BA541DE95DD7965AA7A1A5 /* Pods-Arduino-RemoteTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Arduino-RemoteTests/Pods-Arduino-RemoteTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Arduino-RemoteTests/Pods-Arduino-RemoteTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4EEAD48A352AC3D4DDA0213A1220E94F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68C424290B7C32FF967BB3B43746416B /* Pods-Arduino-RemoteUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Arduino-RemoteUITests/Pods-Arduino-RemoteUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Arduino-RemoteUITests/Pods-Arduino-RemoteUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7266756D74AD2FCBE52F1B1C0B25474B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9014D8FE68A52A987FD72A5958D4F5E3 /* Pods-Arduino-Remote.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Arduino-Remote/Pods-Arduino-Remote-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Arduino-Remote/Pods-Arduino-Remote.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78B0EF7799D6F3576FD0467C5FB6127E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F8A1296D181CF5A2E30538B3501A59 /* Pods-Arduino-Remote.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Arduino-Remote/Pods-Arduino-Remote-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Arduino-Remote/Pods-Arduino-Remote.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		80E2C937DAE96454D5B0DDF4DB170337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 091CAF026BE9C6FFE84DEA21081DD7CC /* Pods-Arduino-RemoteTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Arduino-RemoteTests/Pods-Arduino-RemoteTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Arduino-RemoteTests/Pods-Arduino-RemoteTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B3E7E532AC3B23ED9B64D4E05FEBF8C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0338D3CE2E2105F07A864767F012A91 /* Pods-Arduino-RemoteUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Arduino-RemoteUITests/Pods-Arduino-RemoteUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Arduino-RemoteUITests/Pods-Arduino-RemoteUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA2594EB36EB58E2B458C8B81965898C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D03F3C139319EA4D8F5A6B079637C29 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
+				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84077C21D57C115B539DBE67B78D6216 /* Build configuration list for PBXNativeTarget "Pods-Arduino-RemoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EEAD48A352AC3D4DDA0213A1220E94F /* Debug */,
+				B3E7E532AC3B23ED9B64D4E05FEBF8C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C723B470CAAE4D9B98682528726D057C /* Build configuration list for PBXNativeTarget "Pods-Arduino-RemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E6900B4551CE8A705B8DB4F1E915581 /* Debug */,
+				80E2C937DAE96454D5B0DDF4DB170337 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8851196C07143880ED1DDE46F9BCC1 /* Build configuration list for PBXNativeTarget "Pods-Arduino-Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78B0EF7799D6F3576FD0467C5FB6127E /* Debug */,
+				7266756D74AD2FCBE52F1B1C0B25474B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECFF1ABCF66E3ED0F7C8B3971A1AF667 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2594EB36EB58E2B458C8B81965898C /* Debug */,
+				23640E2F4028261B51D4DA98F7600937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

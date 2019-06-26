@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72D9DF6F954520BD02A25035 /* Pods_Arduino_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70767A79B9D1918F5590421 /* Pods_Arduino_Remote.framework */; };
+		9E8679F3244D874504A5D6FA /* Pods_Arduino_RemoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C802A0E6A923E1AADA27F34 /* Pods_Arduino_RemoteUITests.framework */; };
+		F34AAE0022C4003F00471777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AADFF22C4003F00471777 /* AppDelegate.swift */; };
+		F34AAE0222C4003F00471777 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AAE0122C4003F00471777 /* ViewController.swift */; };
+		F34AAE0822C4003F00471777 /* Arduino_Remote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F34AAE0622C4003F00471777 /* Arduino_Remote.xcdatamodeld */; };
+		F34AAE0A22C4004000471777 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F34AAE0922C4004000471777 /* Assets.xcassets */; };
+		F34AAE0D22C4004000471777 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34AAE0B22C4004000471777 /* LaunchScreen.storyboard */; };
+		F34AAE1822C4004000471777 /* Arduino_RemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AAE1722C4004000471777 /* Arduino_RemoteTests.swift */; };
+		F34AAE2322C4004100471777 /* Arduino_RemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AAE2222C4004100471777 /* Arduino_RemoteUITests.swift */; };
+		F34AAE3122C4015C00471777 /* Constraints-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AAE3022C4015C00471777 /* Constraints-Extention.swift */; };
+		F8240E94F79A834AF4798A64 /* Pods_Arduino_RemoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B19E896EAA17AF7C87FE2E /* Pods_Arduino_RemoteTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F34AAE1422C4004000471777 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F34AADF422C4003F00471777 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F34AADFB22C4003F00471777;
+			remoteInfo = "Arduino-Remote";
+		};
+		F34AAE1F22C4004000471777 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F34AADF422C4003F00471777 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F34AADFB22C4003F00471777;
+			remoteInfo = "Arduino-Remote";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C802A0E6A923E1AADA27F34 /* Pods_Arduino_RemoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arduino_RemoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14EE390589518E326BFC9683 /* Pods-Arduino-RemoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arduino-RemoteTests.release.xcconfig"; path = "Target Support Files/Pods-Arduino-RemoteTests/Pods-Arduino-RemoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		373F19503BB0AABAC1C2CA73 /* Pods-Arduino-Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arduino-Remote.debug.xcconfig"; path = "Target Support Files/Pods-Arduino-Remote/Pods-Arduino-Remote.debug.xcconfig"; sourceTree = "<group>"; };
+		39B19E896EAA17AF7C87FE2E /* Pods_Arduino_RemoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arduino_RemoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F54921B876F1240DE230A7F /* Pods-Arduino-RemoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arduino-RemoteTests.debug.xcconfig"; path = "Target Support Files/Pods-Arduino-RemoteTests/Pods-Arduino-RemoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4E722A22869688D613954EA /* Pods-Arduino-Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arduino-Remote.release.xcconfig"; path = "Target Support Files/Pods-Arduino-Remote/Pods-Arduino-Remote.release.xcconfig"; sourceTree = "<group>"; };
+		C6972EA3FA2578D3992525FD /* Pods-Arduino-RemoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arduino-RemoteUITests.debug.xcconfig"; path = "Target Support Files/Pods-Arduino-RemoteUITests/Pods-Arduino-RemoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C70767A79B9D1918F5590421 /* Pods_Arduino_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arduino_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9A739478AA1BB633B76A8F9 /* Pods-Arduino-RemoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arduino-RemoteUITests.release.xcconfig"; path = "Target Support Files/Pods-Arduino-RemoteUITests/Pods-Arduino-RemoteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F34AADFC22C4003F00471777 /* Arduino-Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arduino-Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34AADFF22C4003F00471777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F34AAE0122C4003F00471777 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F34AAE0722C4003F00471777 /* Arduino_Remote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Arduino_Remote.xcdatamodel; sourceTree = "<group>"; };
+		F34AAE0922C4004000471777 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F34AAE0C22C4004000471777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F34AAE0E22C4004000471777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F34AAE1322C4004000471777 /* Arduino-RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arduino-RemoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34AAE1722C4004000471777 /* Arduino_RemoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arduino_RemoteTests.swift; sourceTree = "<group>"; };
+		F34AAE1922C4004000471777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F34AAE1E22C4004000471777 /* Arduino-RemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arduino-RemoteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34AAE2222C4004100471777 /* Arduino_RemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arduino_RemoteUITests.swift; sourceTree = "<group>"; };
+		F34AAE2422C4004100471777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F34AAE3022C4015C00471777 /* Constraints-Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Constraints-Extention.swift"; sourceTree = "<group>"; };
+		F34AAE3222C40C5900471777 /* Avenir Next.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir Next.ttc"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F34AADF922C4003F00471777 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72D9DF6F954520BD02A25035 /* Pods_Arduino_Remote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34AAE1022C4004000471777 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8240E94F79A834AF4798A64 /* Pods_Arduino_RemoteTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34AAE1B22C4004000471777 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E8679F3244D874504A5D6FA /* Pods_Arduino_RemoteUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0852600FE2AEB037DA5F0712 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C70767A79B9D1918F5590421 /* Pods_Arduino_Remote.framework */,
+				39B19E896EAA17AF7C87FE2E /* Pods_Arduino_RemoteTests.framework */,
+				0C802A0E6A923E1AADA27F34 /* Pods_Arduino_RemoteUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		265FEA42BFB612754BF14AF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				373F19503BB0AABAC1C2CA73 /* Pods-Arduino-Remote.debug.xcconfig */,
+				A4E722A22869688D613954EA /* Pods-Arduino-Remote.release.xcconfig */,
+				7F54921B876F1240DE230A7F /* Pods-Arduino-RemoteTests.debug.xcconfig */,
+				14EE390589518E326BFC9683 /* Pods-Arduino-RemoteTests.release.xcconfig */,
+				C6972EA3FA2578D3992525FD /* Pods-Arduino-RemoteUITests.debug.xcconfig */,
+				D9A739478AA1BB633B76A8F9 /* Pods-Arduino-RemoteUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F34AADF322C4003F00471777 = {
+			isa = PBXGroup;
+			children = (
+				F34AADFE22C4003F00471777 /* Arduino-Remote */,
+				F34AAE1622C4004000471777 /* Arduino-RemoteTests */,
+				F34AAE2122C4004000471777 /* Arduino-RemoteUITests */,
+				F34AADFD22C4003F00471777 /* Products */,
+				265FEA42BFB612754BF14AF5 /* Pods */,
+				0852600FE2AEB037DA5F0712 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F34AADFD22C4003F00471777 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F34AADFC22C4003F00471777 /* Arduino-Remote.app */,
+				F34AAE1322C4004000471777 /* Arduino-RemoteTests.xctest */,
+				F34AAE1E22C4004000471777 /* Arduino-RemoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F34AADFE22C4003F00471777 /* Arduino-Remote */ = {
+			isa = PBXGroup;
+			children = (
+				F34AADFF22C4003F00471777 /* AppDelegate.swift */,
+				F34AAE0122C4003F00471777 /* ViewController.swift */,
+				F34AAE3222C40C5900471777 /* Avenir Next.ttc */,
+				F34AAE3022C4015C00471777 /* Constraints-Extention.swift */,
+				F34AAE0922C4004000471777 /* Assets.xcassets */,
+				F34AAE0B22C4004000471777 /* LaunchScreen.storyboard */,
+				F34AAE0E22C4004000471777 /* Info.plist */,
+				F34AAE0622C4003F00471777 /* Arduino_Remote.xcdatamodeld */,
+			);
+			path = "Arduino-Remote";
+			sourceTree = "<group>";
+		};
+		F34AAE1622C4004000471777 /* Arduino-RemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				F34AAE1722C4004000471777 /* Arduino_RemoteTests.swift */,
+				F34AAE1922C4004000471777 /* Info.plist */,
+			);
+			path = "Arduino-RemoteTests";
+			sourceTree = "<group>";
+		};
+		F34AAE2122C4004000471777 /* Arduino-RemoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F34AAE2222C4004100471777 /* Arduino_RemoteUITests.swift */,
+				F34AAE2422C4004100471777 /* Info.plist */,
+			);
+			path = "Arduino-RemoteUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F34AADFB22C4003F00471777 /* Arduino-Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F34AAE2722C4004100471777 /* Build configuration list for PBXNativeTarget "Arduino-Remote" */;
+			buildPhases = (
+				9D8B901A6F5D82731858008A /* [CP] Check Pods Manifest.lock */,
+				F34AADF822C4003F00471777 /* Sources */,
+				F34AADF922C4003F00471777 /* Frameworks */,
+				F34AADFA22C4003F00471777 /* Resources */,
+				95377B070604297760F869EB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Arduino-Remote";
+			productName = "Arduino-Remote";
+			productReference = F34AADFC22C4003F00471777 /* Arduino-Remote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F34AAE1222C4004000471777 /* Arduino-RemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F34AAE2A22C4004100471777 /* Build configuration list for PBXNativeTarget "Arduino-RemoteTests" */;
+			buildPhases = (
+				13B4D2E637E39592A8E1AC3C /* [CP] Check Pods Manifest.lock */,
+				F34AAE0F22C4004000471777 /* Sources */,
+				F34AAE1022C4004000471777 /* Frameworks */,
+				F34AAE1122C4004000471777 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F34AAE1522C4004000471777 /* PBXTargetDependency */,
+			);
+			name = "Arduino-RemoteTests";
+			productName = "Arduino-RemoteTests";
+			productReference = F34AAE1322C4004000471777 /* Arduino-RemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F34AAE1D22C4004000471777 /* Arduino-RemoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F34AAE2D22C4004100471777 /* Build configuration list for PBXNativeTarget "Arduino-RemoteUITests" */;
+			buildPhases = (
+				4691E56438F720CF2B0393F4 /* [CP] Check Pods Manifest.lock */,
+				F34AAE1A22C4004000471777 /* Sources */,
+				F34AAE1B22C4004000471777 /* Frameworks */,
+				F34AAE1C22C4004000471777 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F34AAE2022C4004000471777 /* PBXTargetDependency */,
+			);
+			name = "Arduino-RemoteUITests";
+			productName = "Arduino-RemoteUITests";
+			productReference = F34AAE1E22C4004000471777 /* Arduino-RemoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F34AADF422C4003F00471777 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Timofey Makhlay";
+				TargetAttributes = {
+					F34AADFB22C4003F00471777 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					F34AAE1222C4004000471777 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F34AADFB22C4003F00471777;
+					};
+					F34AAE1D22C4004000471777 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F34AADFB22C4003F00471777;
+					};
+				};
+			};
+			buildConfigurationList = F34AADF722C4003F00471777 /* Build configuration list for PBXProject "Arduino-Remote" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F34AADF322C4003F00471777;
+			productRefGroup = F34AADFD22C4003F00471777 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F34AADFB22C4003F00471777 /* Arduino-Remote */,
+				F34AAE1222C4004000471777 /* Arduino-RemoteTests */,
+				F34AAE1D22C4004000471777 /* Arduino-RemoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F34AADFA22C4003F00471777 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34AAE0D22C4004000471777 /* LaunchScreen.storyboard in Resources */,
+				F34AAE0A22C4004000471777 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34AAE1122C4004000471777 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34AAE1C22C4004000471777 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13B4D2E637E39592A8E1AC3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Arduino-RemoteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4691E56438F720CF2B0393F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Arduino-RemoteUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95377B070604297760F869EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arduino-Remote/Pods-Arduino-Remote-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arduino-Remote/Pods-Arduino-Remote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D8B901A6F5D82731858008A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Arduino-Remote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F34AADF822C4003F00471777 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34AAE0222C4003F00471777 /* ViewController.swift in Sources */,
+				F34AAE3122C4015C00471777 /* Constraints-Extention.swift in Sources */,
+				F34AAE0822C4003F00471777 /* Arduino_Remote.xcdatamodeld in Sources */,
+				F34AAE0022C4003F00471777 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34AAE0F22C4004000471777 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34AAE1822C4004000471777 /* Arduino_RemoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34AAE1A22C4004000471777 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34AAE2322C4004100471777 /* Arduino_RemoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F34AAE1522C4004000471777 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F34AADFB22C4003F00471777 /* Arduino-Remote */;
+			targetProxy = F34AAE1422C4004000471777 /* PBXContainerItemProxy */;
+		};
+		F34AAE2022C4004000471777 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F34AADFB22C4003F00471777 /* Arduino-Remote */;
+			targetProxy = F34AAE1F22C4004000471777 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F34AAE0B22C4004000471777 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F34AAE0C22C4004000471777 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F34AAE2522C4004100471777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F34AAE2622C4004100471777 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F34AAE2822C4004100471777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 373F19503BB0AABAC1C2CA73 /* Pods-Arduino-Remote.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SAZ2DLKCVY;
+				INFOPLIST_FILE = "Arduino-Remote/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Timofey-Makhlay.Arduino-Remote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F34AAE2922C4004100471777 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4E722A22869688D613954EA /* Pods-Arduino-Remote.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SAZ2DLKCVY;
+				INFOPLIST_FILE = "Arduino-Remote/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Timofey-Makhlay.Arduino-Remote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F34AAE2B22C4004100471777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F54921B876F1240DE230A7F /* Pods-Arduino-RemoteTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SAZ2DLKCVY;
+				INFOPLIST_FILE = "Arduino-RemoteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Timofey-Makhlay.Arduino-RemoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arduino-Remote.app/Arduino-Remote";
+			};
+			name = Debug;
+		};
+		F34AAE2C22C4004100471777 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14EE390589518E326BFC9683 /* Pods-Arduino-RemoteTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SAZ2DLKCVY;
+				INFOPLIST_FILE = "Arduino-RemoteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Timofey-Makhlay.Arduino-RemoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arduino-Remote.app/Arduino-Remote";
+			};
+			name = Release;
+		};
+		F34AAE2E22C4004100471777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6972EA3FA2578D3992525FD /* Pods-Arduino-RemoteUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SAZ2DLKCVY;
+				INFOPLIST_FILE = "Arduino-RemoteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Timofey-Makhlay.Arduino-RemoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Arduino-Remote";
+			};
+			name = Debug;
+		};
+		F34AAE2F22C4004100471777 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9A739478AA1BB633B76A8F9 /* Pods-Arduino-RemoteUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SAZ2DLKCVY;
+				INFOPLIST_FILE = "Arduino-RemoteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Timofey-Makhlay.Arduino-RemoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Arduino-Remote";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F34AADF722C4003F00471777 /* Build configuration list for PBXProject "Arduino-Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34AAE2522C4004100471777 /* Debug */,
+				F34AAE2622C4004100471777 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F34AAE2722C4004100471777 /* Build configuration list for PBXNativeTarget "Arduino-Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34AAE2822C4004100471777 /* Debug */,
+				F34AAE2922C4004100471777 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F34AAE2A22C4004100471777 /* Build configuration list for PBXNativeTarget "Arduino-RemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34AAE2B22C4004100471777 /* Debug */,
+				F34AAE2C22C4004100471777 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F34AAE2D22C4004100471777 /* Build configuration list for PBXNativeTarget "Arduino-RemoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34AAE2E22C4004100471777 /* Debug */,
+				F34AAE2F22C4004100471777 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F34AAE0622C4003F00471777 /* Arduino_Remote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F34AAE0722C4003F00471777 /* Arduino_Remote.xcdatamodel */,
+			);
+			currentVersion = F34AAE0722C4003F00471777 /* Arduino_Remote.xcdatamodel */;
+			path = Arduino_Remote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F34AADF422C4003F00471777 /* Project object */;
+}
