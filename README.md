@@ -22,3 +22,13 @@ Making an iOS app to remote control an Arduino.
 ![1](/img/1.png)<br><br><br>![2](/img/2.png)
 
 <br><br>
+
+# Flask
+To *create* virtualenv:
+* `virtualenv flask`
+
+To *run* virtualenv:
+* `source bin/activate`
+
+To *start* flask *locally*:
+* `FLASK_APP=hello.py flask run`
