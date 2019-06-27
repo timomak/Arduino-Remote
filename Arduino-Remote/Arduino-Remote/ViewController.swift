@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import Alamofire
 
 class ViewController: UIViewController {
     
@@ -57,7 +58,8 @@ class ViewController: UIViewController {
         button.setTitle("backward", for: .normal)
         button.setTitleColor(#colorLiteral(red: 0.9996390939, green: 1, blue: 0.9997561574, alpha: 1), for: .normal)
         button.titleLabel?.font = UIFont(name: "AvenirNext-Bold", size: UIScreen.main.bounds.height / 30)
-        //        button.addTarget(self, action: #selector(returnButtonPressed), for: .touchUpInside)
+        button.addTarget(self, action: #selector(backwardButtonDone), for: .touchUpInside)
+        button.addTarget(self, action: #selector(backwardButtonPressed), for: .touchDown)
         button.backgroundColor = #colorLiteral(red: 0.0774943307, green: 0.1429743171, blue: 0.290320158, alpha: 1)
         button.layer.shadowColor = #colorLiteral(red: 0.503008008, green: 0.5034076571, blue: 0.5030698776, alpha: 1)
         button.layer.shadowOpacity = 0.8
@@ -91,6 +93,28 @@ class ViewController: UIViewController {
     var forwardBeingPressed = false
     
     var netManager = NetworkManager()
+    
+    let urlString = "http://127.0.0.1:5000/ios/"
+    
+    var sensorStatus: String = "" {
+        didSet {
+            
+            // TODO: Inverst "0" and "1"
+            //print("SensorStatus Set to:", sensorStatus)
+            
+            // If the button is not being pressed
+            if sensorStatus == "1" {
+                // Stop spinning rocket
+                rocketshipText.layer.removeAllAnimations()
+            }
+                
+            // If the buttonn is being pressed
+            else if sensorStatus == "0" {
+                // Start spinning rocket
+                rocketshipText.rotate360Degrees()
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -155,16 +179,73 @@ class ViewController: UIViewController {
     @objc func forwardButtonDone() {
         print("Button unpressed")
         forwardBeingPressed = false
-        rocketshipText.layer.removeAllAnimations()
+        forwardButton.layer.backgroundColor = #colorLiteral(red: 0.0774943307, green: 0.1429743171, blue: 0.290320158, alpha: 1)
+        postMotorStatus(status: "stop")
     }
     
     
     @objc func forwardButtonPressed() {
         print("Button pressed")
+        forwardButton.layer.backgroundColor = #colorLiteral(red: 0.6776023507, green: 0.7860966325, blue: 0.9939226508, alpha: 1)
         forwardBeingPressed = true
-        rocketshipText.rotate360Degrees()
         
-        netManager.getSensorStatus()
+//        getSensorStatus()
+//        netManager.getSensorStatus()
+        postMotorStatus(status: "forward")
+        
+    }
+    
+    @objc func backwardButtonDone() {
+        print("Button unpressed")
+        backwardButton.layer.backgroundColor = #colorLiteral(red: 0.0774943307, green: 0.1429743171, blue: 0.290320158, alpha: 1)
+        postMotorStatus(status: "stop")
+        
+    }
+    
+    
+    @objc func backwardButtonPressed() {
+//        print("Button pressed")
+        backwardButton.layer.backgroundColor = #colorLiteral(red: 0.6776023507, green: 0.7860966325, blue: 0.9939226508, alpha: 1)
+        postMotorStatus(status: "backward")
+        
+        
+    }
+    
+    func getSensorStatus(){
+        // Get sensor status
+        Alamofire.request(urlString + "sensor", method: .get, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                print("response: ", response)
+                switch response.result {
+                    
+                case .success(_):
+                    
+                    DispatchQueue.main.async {
+                        guard let status = response.result.value as? [String: String] else { return }
+                        print("Sensor Response:",status)
+                        // TODO: Hanlde status responsess
+                        self.sensorStatus = status["state"] ?? ""
+                        
+                    }
+                case .failure(let error):
+                    print("Sensor Failiure:",error)
+                }
+        }
+    }
+    
+    func postMotorStatus(status: String) {
+        // Post network status
+        Alamofire.request(urlString + "motor", method: .post, parameters: ["state": status],encoding: JSONEncoding.default, headers: nil).responseJSON {
+            response in
+            switch response.result {
+            case .success:
+                print("Success Response:",response)
+                
+                break
+            case .failure(let error):
+                print("Failure Response:",error)
+            }
+        }
     }
 
 
