@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
@@ -9,16 +9,16 @@ def motor(action):
     if action is "forward":
         # Ping arduino to move motor forward.
         return "forward"
-    else if action is "stop":
+    elif action is "stop":
         # TODO: Ping arduino to stop moving the motor.
         return "stop"
-    else if action is "backward":
+    elif action is "backward":
         # TODO: Ping arduino to move the motor backward.
         return "backward"
 
 
 # Sensor actions
-sensor_state = False
+sensor_state = "0"
 
 # Test app
 @app.route("/", methods=['GET'])
@@ -33,28 +33,32 @@ def signal_motor():
         abort(400)
 
     # update motor state
+    global motor_state
     motor_state = request.json['state']
     return jsonify({'state': motor_state}), 201
 
 # Tell arduino the motor state
 @app.route("/ios/sensor", methods=['GET'])
-def arduino():
-    return sensor_state
+def check_sensor():
+    global sensor_state
+    return jsonify({'state': sensor_state}), 201
 
 
 # Tell arduino the motor state
 @app.route("/arduino/motor", methods=['GET'])
-def arduino():
+def check_motor():
+    global motor_states
     return motor(motor_state) # In the function for now inn case I need to return something different.
 
 # Arduino Sensor state
 @app.route('/arduino/sensor', methods=['POST'])
-def signal_motor():
+def signal_sensor():
     # Handle error
     if not request.json or not 'state' in request.json:
         abort(400)
 
     # update motor state
+    global sensor_state
     sensor_state = request.json['state']
     return jsonify({'state': sensor_state}), 201
 

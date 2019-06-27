@@ -7,6 +7,7 @@ target 'Arduino-Remote' do
 
   # Pods for Arduino-Remote
   pod 'SnapKit'
+  pod 'Alamofire'
 
   target 'Arduino-RemoteTests' do
     inherit! :search_paths

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		72D9DF6F954520BD02A25035 /* Pods_Arduino_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70767A79B9D1918F5590421 /* Pods_Arduino_Remote.framework */; };
 		9E8679F3244D874504A5D6FA /* Pods_Arduino_RemoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C802A0E6A923E1AADA27F34 /* Pods_Arduino_RemoteUITests.framework */; };
+		F3101EE322C5533900575CCA /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3101EE222C5533900575CCA /* NetworkLayer.swift */; };
 		F34AAE0022C4003F00471777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AADFF22C4003F00471777 /* AppDelegate.swift */; };
 		F34AAE0222C4003F00471777 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AAE0122C4003F00471777 /* ViewController.swift */; };
 		F34AAE0822C4003F00471777 /* Arduino_Remote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F34AAE0622C4003F00471777 /* Arduino_Remote.xcdatamodeld */; };
@@ -16,7 +17,6 @@
 		F34AAE0D22C4004000471777 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34AAE0B22C4004000471777 /* LaunchScreen.storyboard */; };
 		F34AAE1822C4004000471777 /* Arduino_RemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AAE1722C4004000471777 /* Arduino_RemoteTests.swift */; };
 		F34AAE2322C4004100471777 /* Arduino_RemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AAE2222C4004100471777 /* Arduino_RemoteUITests.swift */; };
-		F34AAE3122C4015C00471777 /* Constraints-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34AAE3022C4015C00471777 /* Constraints-Extention.swift */; };
 		F8240E94F79A834AF4798A64 /* Pods_Arduino_RemoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B19E896EAA17AF7C87FE2E /* Pods_Arduino_RemoteTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +47,7 @@
 		C6972EA3FA2578D3992525FD /* Pods-Arduino-RemoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arduino-RemoteUITests.debug.xcconfig"; path = "Target Support Files/Pods-Arduino-RemoteUITests/Pods-Arduino-RemoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C70767A79B9D1918F5590421 /* Pods_Arduino_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arduino_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A739478AA1BB633B76A8F9 /* Pods-Arduino-RemoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arduino-RemoteUITests.release.xcconfig"; path = "Target Support Files/Pods-Arduino-RemoteUITests/Pods-Arduino-RemoteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F3101EE222C5533900575CCA /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		F34AADFC22C4003F00471777 /* Arduino-Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arduino-Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34AADFF22C4003F00471777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F34AAE0122C4003F00471777 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		F34AAE1E22C4004000471777 /* Arduino-RemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arduino-RemoteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34AAE2222C4004100471777 /* Arduino_RemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arduino_RemoteUITests.swift; sourceTree = "<group>"; };
 		F34AAE2422C4004100471777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F34AAE3022C4015C00471777 /* Constraints-Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Constraints-Extention.swift"; sourceTree = "<group>"; };
 		F34AAE3222C40C5900471777 /* Avenir Next.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir Next.ttc"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +112,6 @@
 				C6972EA3FA2578D3992525FD /* Pods-Arduino-RemoteUITests.debug.xcconfig */,
 				D9A739478AA1BB633B76A8F9 /* Pods-Arduino-RemoteUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -143,8 +142,8 @@
 			children = (
 				F34AADFF22C4003F00471777 /* AppDelegate.swift */,
 				F34AAE0122C4003F00471777 /* ViewController.swift */,
+				F3101EE222C5533900575CCA /* NetworkLayer.swift */,
 				F34AAE3222C40C5900471777 /* Avenir Next.ttc */,
-				F34AAE3022C4015C00471777 /* Constraints-Extention.swift */,
 				F34AAE0922C4004000471777 /* Assets.xcassets */,
 				F34AAE0B22C4004000471777 /* LaunchScreen.storyboard */,
 				F34AAE0E22C4004000471777 /* Info.plist */,
@@ -354,12 +353,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Arduino-Remote/Pods-Arduino-Remote-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,8 +397,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3101EE322C5533900575CCA /* NetworkLayer.swift in Sources */,
 				F34AAE0222C4003F00471777 /* ViewController.swift in Sources */,
-				F34AAE3122C4015C00471777 /* Constraints-Extention.swift in Sources */,
 				F34AAE0822C4003F00471777 /* Arduino_Remote.xcdatamodeld in Sources */,
 				F34AAE0022C4003F00471777 /* AppDelegate.swift in Sources */,
 			);

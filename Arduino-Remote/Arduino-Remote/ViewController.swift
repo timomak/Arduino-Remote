@@ -89,6 +89,8 @@ class ViewController: UIViewController {
     }()
     
     var forwardBeingPressed = false
+    
+    var netManager = NetworkManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -161,6 +163,8 @@ class ViewController: UIViewController {
         print("Button pressed")
         forwardBeingPressed = true
         rocketshipText.rotate360Degrees()
+        
+        netManager.getSensorStatus()
     }
 
 
