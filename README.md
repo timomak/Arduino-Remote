@@ -31,4 +31,4 @@ To *run* virtualenv:
 * `source bin/activate`
 
 To *start* flask *locally*:
-* `FLASK_APP=hello.py flask run`
+* `FLASK_APP=main.py flask run`

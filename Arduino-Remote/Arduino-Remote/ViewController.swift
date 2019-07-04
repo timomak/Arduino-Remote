@@ -212,43 +212,45 @@ class ViewController: UIViewController {
     }
     
     func getSensorStatus(){
-        // Get sensor status
-        Alamofire.request(urlString + "sensor", method: .get, encoding: JSONEncoding.default)
-            .responseJSON { response in
-                print("response: ", response)
-                switch response.result {
-                    
-                case .success(_):
-                    
-                    DispatchQueue.main.async {
-                        guard let status = response.result.value as? [String: String] else { return }
-                        print("Sensor Response:",status)
-                        // TODO: Hanlde status responsess
-                        self.sensorStatus = status["state"] ?? ""
+        DispatchQueue.main.async {
+            // Get sensor status
+            Alamofire.request(self.urlString + "sensor", method: .get, encoding: JSONEncoding.default)
+                .responseJSON { response in
+                    print("response: ", response)
+                    switch response.result {
                         
+                    case .success(_):
+                        
+                        DispatchQueue.main.async {
+                            guard let status = response.result.value as? [String: String] else { return }
+                            print("Sensor Response:",status)
+                            // TODO: Hanlde status responsess
+                            self.sensorStatus = status["state"] ?? ""
+                            
+                        }
+                    case .failure(let error):
+                        print("Sensor Failiure:",error)
                     }
-                case .failure(let error):
-                    print("Sensor Failiure:",error)
-                }
+            }
         }
     }
     
     func postMotorStatus(status: String) {
-        // Post network status
-        Alamofire.request(urlString + "motor", method: .post, parameters: ["state": status],encoding: JSONEncoding.default, headers: nil).responseJSON {
-            response in
-            switch response.result {
-            case .success:
-                print("Success Response:",response)
-                
-                break
-            case .failure(let error):
-                print("Failure Response:",error)
+        DispatchQueue.main.async {
+            // Post network status
+            Alamofire.request(self.urlString + "motor", method: .post, parameters: ["state": status],encoding: JSONEncoding.default, headers: nil).responseJSON {
+                response in
+                switch response.result {
+                case .success:
+                    print("Success Response:",response)
+                    
+                    break
+                case .failure(let error):
+                    print("Failure Response:",error)
+                }
             }
         }
     }
-
-
 }
 
 extension UIView {
