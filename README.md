@@ -30,7 +30,8 @@
   * I can also make an app that will allow anyone to connect their arduino to the app.
 
 # Preview of app
-![1](/img/1.png)<br><br><br>![2](/img/2.png)
+![1](/img/1.png)
+<!-- <br><br><br>![2](/img/2.png) -->
 
 <br><br>
 
