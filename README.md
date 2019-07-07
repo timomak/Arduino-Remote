@@ -47,3 +47,6 @@ To *start* flask *locally*:
 
 To *create* requirements.txt:
 * `pip freeze > requirements.txt`
+
+To *push* heroku after git commit pushed:
+* `git push heroku master`

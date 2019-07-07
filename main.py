@@ -23,7 +23,7 @@ sensor_state = "0"
 # Test app
 @app.route("/", methods=['GET'])
 def home():
-    return "Hello, Arduino Remote!"
+    return "Hello, Remote API!"
 
 # App to change motor value
 @app.route('/ios/motor', methods=['POST'])
