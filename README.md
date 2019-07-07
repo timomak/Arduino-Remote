@@ -44,3 +44,6 @@ To *run* virtualenv:
 
 To *start* flask *locally*:
 * `FLASK_APP=main.py flask run`
+
+To *create* requirements.txt:
+* `pip freeze > requirements.txt`
