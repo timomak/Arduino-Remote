@@ -5,18 +5,6 @@ app = Flask(__name__)
 # Motor actions
 motor_state = "stop"
 
-# def motor(action):
-#     if action is "forward":
-#         # Ping arduino to move motor forward.
-#         return "forward"
-#     elif action is "stop":
-#         # TODO: Ping arduino to stop moving the motor.
-#         return "stop"
-#     elif action is "backward":
-#         # TODO: Ping arduino to move the motor backward.
-#         return "backward"
-
-
 # Sensor actions
 sensor_state = "0"
 
@@ -48,7 +36,7 @@ def check_sensor():
 @app.route("/arduino/motor", methods=['GET'])
 def check_motor():
     global motor_state
-    return motor_state # In the function for now inn case I need to return something different.
+    return motor_state # In the function for now in case I need to return something different.
 
 # Arduino Sensor state
 @app.route('/arduino/sensor', methods=['POST'])

@@ -180,7 +180,7 @@ class ViewController: UIViewController {
         print("Button unpressed")
         forwardBeingPressed = false
         forwardButton.layer.backgroundColor = #colorLiteral(red: 0.0774943307, green: 0.1429743171, blue: 0.290320158, alpha: 1)
-        postMotorStatus(status: "stop")
+//        postMotorStatus(status: "stop")
     }
     
     
@@ -198,7 +198,7 @@ class ViewController: UIViewController {
     @objc func backwardButtonDone() {
         print("Button unpressed")
         backwardButton.layer.backgroundColor = #colorLiteral(red: 0.0774943307, green: 0.1429743171, blue: 0.290320158, alpha: 1)
-        postMotorStatus(status: "stop")
+//        postMotorStatus(status: "stop")
         
     }
     
