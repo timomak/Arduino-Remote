@@ -94,7 +94,7 @@ class ViewController: UIViewController {
     
     var netManager = NetworkManager()
     
-    let urlString = "http://127.0.0.1:5000/ios/"
+    let urlString = "https://remote-rest-api.herokuapp.com/ios/"
     
     var sensorStatus: String = "" {
         didSet {
