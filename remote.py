@@ -57,7 +57,7 @@ while True:
 	except KeyboardInterrupt:
 		print("Interrupted by keyboard")
 		conn.close()
-conn.close() # Close connections
+# conn.close() # Close connections
 """
 The code below was used to connect via API rather than a socket.
 """
