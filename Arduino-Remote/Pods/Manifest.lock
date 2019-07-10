@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (4.8.2)
   - SnapKit (5.0.0)
+  - SwiftSocket (2.0.2)
 
 DEPENDENCIES:
   - Alamofire
   - SnapKit
+  - SwiftSocket
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - SnapKit
+    - SwiftSocket
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
 
-PODFILE CHECKSUM: 946d5b92408294d7979f7595bef263cd9e4513e8
+PODFILE CHECKSUM: 00dab0ccda69b28a601bb1e5287d97e5b77cf522
 
 COCOAPODS: 1.6.1

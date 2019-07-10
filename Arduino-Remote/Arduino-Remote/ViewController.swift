@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 import Alamofire
+import SwiftSocket
 
 class ViewController: UIViewController {
     
@@ -91,8 +92,6 @@ class ViewController: UIViewController {
     }()
     
     var forwardBeingPressed = false
-    
-    var netManager = NetworkManager()
     
     let urlString = "https://remote-rest-api.herokuapp.com/ios/"
     
@@ -177,7 +176,7 @@ class ViewController: UIViewController {
     }
     
     @objc func forwardButtonDone() {
-        print("Button unpressed")
+//        print("Button unpressed")
         forwardBeingPressed = false
         forwardButton.layer.backgroundColor = #colorLiteral(red: 0.0774943307, green: 0.1429743171, blue: 0.290320158, alpha: 1)
 //        postMotorStatus(status: "stop")
@@ -185,18 +184,18 @@ class ViewController: UIViewController {
     
     
     @objc func forwardButtonPressed() {
-        print("Button pressed")
+//        print("Button pressed")
         forwardButton.layer.backgroundColor = #colorLiteral(red: 0.6776023507, green: 0.7860966325, blue: 0.9939226508, alpha: 1)
         forwardBeingPressed = true
         
 //        getSensorStatus()
 //        netManager.getSensorStatus()
-        postMotorStatus(status: "forward")
-        
+//        postMotorStatus(status: "forward")
+        connectToClient()
     }
     
     @objc func backwardButtonDone() {
-        print("Button unpressed")
+//        print("Button unpressed")
         backwardButton.layer.backgroundColor = #colorLiteral(red: 0.0774943307, green: 0.1429743171, blue: 0.290320158, alpha: 1)
 //        postMotorStatus(status: "stop")
         
@@ -206,51 +205,74 @@ class ViewController: UIViewController {
     @objc func backwardButtonPressed() {
 //        print("Button pressed")
         backwardButton.layer.backgroundColor = #colorLiteral(red: 0.6776023507, green: 0.7860966325, blue: 0.9939226508, alpha: 1)
-        postMotorStatus(status: "backward")
+//        postMotorStatus(status: "backward")
         
         
     }
     
-    func getSensorStatus(){
-        DispatchQueue.main.async {
-            // Get sensor status
-            Alamofire.request(self.urlString + "sensor", method: .get, encoding: JSONEncoding.default)
-                .responseJSON { response in
-                    print("response: ", response)
-                    switch response.result {
-                        
-                    case .success(_):
-                        
-                        DispatchQueue.main.async {
-                            guard let status = response.result.value as? [String: String] else { return }
-                            print("Sensor Response:",status)
-                            // TODO: Hanlde status responsess
-                            self.sensorStatus = status["state"] ?? ""
-                            
-                        }
-                    case .failure(let error):
-                        print("Sensor Failiure:",error)
-                    }
-            }
-        }
-    }
-    
-    func postMotorStatus(status: String) {
-        DispatchQueue.main.async {
-            // Post network status
-            Alamofire.request(self.urlString + "motor", method: .post, parameters: ["state": status],encoding: JSONEncoding.default, headers: nil).responseJSON {
-                response in
-                switch response.result {
-                case .success:
-                    print("Success Response:",response)
-                    
-                    break
-                case .failure(let error):
-                    print("Failure Response:",error)
+    func connectToClient() {
+        let client = TCPClient(address: "timofeys-macbook-pro.local", port: 12345)
+        switch client.connect(timeout: 5) {
+        case .success:
+            switch client.send(string: "Test" ) {
+            case .success:
+                guard let data = client.read(1024*10) else { return }
+                
+                if let response = String(bytes: data, encoding: .utf8) {
+                    print(response)
                 }
+            case .failure(let error):
+                print(error)
             }
+        case .failure(let error):
+            print(error)
         }
     }
+   
+    
+/*
+     THIS IS THE CODE TO USE WITH THE API
+ */
+//    func getSensorStatus(){
+//        DispatchQueue.main.async {
+//            // Get sensor status
+//            Alamofire.request(self.urlString + "sensor", method: .get, encoding: JSONEncoding.default)
+//                .responseJSON { response in
+//                    print("response: ", response)
+//                    switch response.result {
+//
+//                    case .success(_):
+//
+//                        DispatchQueue.main.async {
+//                            guard let status = response.result.value as? [String: String] else { return }
+//                            print("Sensor Response:",status)
+//                            // TODO: Hanlde status responsess
+//                            self.sensorStatus = status["state"] ?? ""
+//
+//                        }
+//                    case .failure(let error):
+//                        print("Sensor Failiure:",error)
+//                    }
+//            }
+//        }
+//    }
+//
+//    func postMotorStatus(status: String) {
+//        DispatchQueue.main.async {
+//            // Post network status
+//            Alamofire.request(self.urlString + "motor", method: .post, parameters: ["state": status],encoding: JSONEncoding.default, headers: nil).responseJSON {
+//                response in
+//                switch response.result {
+//                case .success:
+//                    print("Success Response:",response)
+//
+//                    break
+//                case .failure(let error):
+//                    print("Failure Response:",error)
+//                }
+//            }
+//        }
+//    }
 }
 
 extension UIView {
