@@ -12,9 +12,7 @@ import threading
 
 import socket
 
-
-
-HOST = '10.0.0.208' # Server IP or Hostname
+HOST = '' # Server IP or Hostname
 PORT = 12345 # Pick an open Port (1000+ recommended), must match the client sport
 s = socket.socket() # Keep it a stream. socket.AF_INET, socket.SOCK_STREAM
 print('Socket created')
@@ -56,10 +54,10 @@ while True:
 
 		# Sending reply
 		conn.send(reply.encode('utf-8'))
-		conn.close() # Close connections
 	except KeyboardInterrupt:
 		print("Interrupted by keyboard")
 		conn.close()
+conn.close() # Close connections
 """
 The code below was used to connect via API rather than a socket.
 """

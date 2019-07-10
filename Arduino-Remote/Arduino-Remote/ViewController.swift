@@ -180,6 +180,7 @@ class ViewController: UIViewController {
         forwardBeingPressed = false
         forwardButton.layer.backgroundColor = #colorLiteral(red: 0.0774943307, green: 0.1429743171, blue: 0.290320158, alpha: 1)
 //        postMotorStatus(status: "stop")
+        tellMotorToMove("stop")
     }
     
     
@@ -191,14 +192,14 @@ class ViewController: UIViewController {
 //        getSensorStatus()
 //        netManager.getSensorStatus()
 //        postMotorStatus(status: "forward")
-        connectToClient()
+        tellMotorToMove("forward")
     }
     
     @objc func backwardButtonDone() {
 //        print("Button unpressed")
         backwardButton.layer.backgroundColor = #colorLiteral(red: 0.0774943307, green: 0.1429743171, blue: 0.290320158, alpha: 1)
 //        postMotorStatus(status: "stop")
-        
+        tellMotorToMove("stop")
     }
     
     
@@ -206,26 +207,31 @@ class ViewController: UIViewController {
 //        print("Button pressed")
         backwardButton.layer.backgroundColor = #colorLiteral(red: 0.6776023507, green: 0.7860966325, blue: 0.9939226508, alpha: 1)
 //        postMotorStatus(status: "backward")
-        
+        tellMotorToMove("backward")
         
     }
     
-    func connectToClient() {
-        let client = TCPClient(address: "timofeys-macbook-pro.local", port: 12345)
-        switch client.connect(timeout: 5) {
-        case .success:
-            switch client.send(string: "Test" ) {
+
+
+    func tellMotorToMove(_ direction: String) {
+        DispatchQueue.main.async {
+            let client = TCPClient(address: "127.0.1.1", port: 8080)
+            switch client.connect(timeout: 30) {
             case .success:
-                guard let data = client.read(1024*10) else { return }
-                
-                if let response = String(bytes: data, encoding: .utf8) {
-                    print(response)
-                }
+                print("Success")
+//                switch client.send(string: direction) {
+//                case .success:
+//                    guard let data = client.read(1024) else { return }
+//
+//                    if let response = String(bytes: data, encoding: .utf8) {
+//                        print(response)
+//                    }
+//                case .failure(let error):
+//                    print(error)
+//                }
             case .failure(let error):
                 print(error)
             }
-        case .failure(let error):
-            print(error)
         }
     }
    
